@@ -347,7 +347,7 @@
                 </div>
                 
                 <p class="intro-text">
-                    CLPO (Curriculum Learning meets Policy Optimization) is a novel reinforcement learning framework for mathematical reasoning that combines curriculum learning with policy optimization. Our approach systematically organizes training problems by difficulty and adaptively focuses on appropriately challenging problems to enhance LLM reasoning capabilities.
+                    To address this challenge, we propose CLPO (Curriculum-guided Learning for Policy Optimization), a novel framework that actualizes a paradigm of Guided Self-Evolution (Silver et al., 2018). The core innovation of CLPO is its elevation of rollout information from a mere reward calculation signal to the central driver for constructing a dynamic curriculum. It employs Online Curriculum Learning to assess problem difficulty in real-time, which in turn guides an Adaptive Problem Restructuring mechanism to diversify medium problems and simplify hard ones. Furthermore, we introduce Difficulty-aware Policy Optimization, which integrates the curriculum signal into the optimization process via dynamic KL regularization. Through these mechanisms, CLPO transforms the training process into a structured, adaptive curriculum that co-evolves with the model's capabilities, all without any external dependencies.
                 </p>
             </div>
 
@@ -355,7 +355,7 @@
             <div class="section">
                 <h2><i class="fas fa-fire"></i> News</h2>
                 <div class="news-item">
-                    <span class="news-date">[2025/09/29]</span> Full code for CLPO training and evaluation released.
+                    <span class="news-date">[2025/09/29]</span> Full code for CLPO training released.
                 </div>
                 <div class="news-item">
                     <span class="news-date">[2025/09/29]</span> CLPO paper, repository, and project page released.
