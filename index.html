@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLPO: Guided Self-Evolution for Mathematical Reasoning</title>
+    <title>CLPO: CURRICULUM LEARNING MEETS POLICY OPTIMIZATION FOR LLM REASONING</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -43,12 +43,40 @@
         }
 
         .title h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 700;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .authors {
+            margin-bottom: 1.5rem;
+        }
+
+        .author-names {
+            font-size: 1.1rem;
+            color: #2c3e50;
             margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .author {
+            color: #34495e;
+        }
+
+        .affiliations {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        sup {
+            font-size: 0.8rem;
+            color: #667eea;
+            font-weight: 600;
         }
 
         .subtitle {
@@ -274,8 +302,21 @@
     <div class="header">
         <div class="container">
             <div class="title">
-                <h1>CLPO</h1>
-                <p class="subtitle">Guided Self-Evolution for Mathematical Reasoning</p>
+                <h1>CLPO: CURRICULUM LEARNING MEETS POLICY OPTIMIZATION FOR LLM REASONING</h1>
+                
+                <div class="authors">
+                    <p class="author-names">
+                        <span class="author">Shijie Zhang</span><sup>1</sup>, 
+                        <span class="author">Guohao Sun</span><sup>1</sup>, 
+                        <span class="author">Kevin Zhang</span><sup>1</sup>, 
+                        <span class="author">Xiang Guo</span><sup>2</sup>, 
+                        <span class="author">Rujun Guo</span><sup>2</sup>
+                    </p>
+                    <p class="affiliations">
+                        <sup>1</sup>Peking University &nbsp;&nbsp;&nbsp;
+                        <sup>2</sup>Zhineng Xinxi, Alibaba Group
+                    </p>
+                </div>
             </div>
             <div class="links">
                 <a href="#" class="link-btn">
@@ -306,7 +347,7 @@
                 </div>
                 
                 <p class="intro-text">
-                    CLPO (Guided Self-Evolution) is a novel reinforcement learning framework for mathematical reasoning that enables models to evolve through self-guided problem rewriting and solving. Unlike traditional RLVR methods that rely on external guidance, CLPO operates under the <strong>Guided Self-Evolution</strong> paradigm.
+                    CLPO (Curriculum Learning meets Policy Optimization) is a novel reinforcement learning framework for mathematical reasoning that combines curriculum learning with policy optimization. Our approach systematically organizes training problems by difficulty and adaptively focuses on appropriately challenging problems to enhance LLM reasoning capabilities.
                 </p>
             </div>
 
